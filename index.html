@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
 
 :root {
   --cream: #FAF6EE;
@@ -109,7 +110,7 @@ nav {
 .focus-item span { font-size: 0.9rem; color: var(--muted); }
 
 /* ── SECTIONS ── */
-section { padding: var(--section-gap) 4rem; }
+section { padding: var(--section-gap) 4rem; scroll-margin-top: 80px; }
 .section-eyebrow { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
 .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; color: var(--deep); line-height: 1.2; margin-bottom: 1rem; }
 .section-sub { font-size: 1rem; color: var(--muted); max-width: 600px; line-height: 1.75; }
@@ -378,7 +379,7 @@ footer { background: var(--deep); color: rgba(255,255,255,0.55); padding: 4rem; 
     <div>
       <div class="zeffy-card">
         <h3>Ready to make a difference?</h3>
-        <p class="zeffy-sub">100% of your donation goes directly to families in our community. We use Zeffy — where every dollar reaches us with zero platform fees.</p>
+        <p class="zeffy-sub">100% of your donation goes directly to families in our community. We use Zeffy — where every dollar reaches us with zero platform fees. Event date: July 25, 2026.</p>
         <a href="https://www.zeffy.com/en-US/donation-form/back-to-school-giveaway-donations" target="_blank" rel="noopener noreferrer" class="zeffy-btn">Donate Now via Zeffy →</a>
         <div class="zeffy-trust">
           <span>✓ 0% platform fees</span>
@@ -398,10 +399,6 @@ footer { background: var(--deep); color: rgba(255,255,255,0.55); padding: 4rem; 
       <p class="section-eyebrow">Who we are</p>
       <h2 class="section-title">Born from lived experience.<br>Built for lasting change.</h2>
       <p style="color:var(--muted); margin-bottom:1.5rem; line-height:1.75;">Creating Executive Opportunities Foundation was founded by a survivor who understands firsthand how adverse childhood experiences — ACEs — shape a life. That experience became a mission: to make sure no child, family, or aspiring leader has to navigate trauma without support, knowledge, or community.</p>
-      <div class="about-quote">
-        <blockquote>"My background in psychology, my faith, and my own survival gave me a lens that credentials alone cannot teach. We don't just build programs — we build people."</blockquote>
-        <cite>— Founder, Creating Executive Opportunities Foundation</cite>
-      </div>
       <p style="color:var(--muted); line-height:1.75;">We work at the intersection of trauma-informed care, community resilience, and leadership development — equipping churches, nonprofits, and individuals with the tools to create real, measurable change.</p>
     </div>
     <div>
@@ -430,8 +427,8 @@ footer { background: var(--deep); color: rgba(255,255,255,0.55); padding: 4rem; 
     <div class="impact-card"><div class="impact-num">453</div><div class="impact-label">Backpacks & supplies distributed to date</div></div>
   </div>
   <div class="impact-cta">
-    <p>Download our full impact report to see how your donations are put to work — with full financial transparency and program outcomes.</p>
-    <a href="#" class="btn btn-teal">Download Impact Report</a>
+    <p>Want to support our mission, sponsor a program, or bring trauma-informed training to your church or organization?</p>
+    <a href="mailto:support@ceotransformation.org" class="btn btn-teal">Get in Touch</a>
   </div>
 </section>
 
@@ -466,7 +463,13 @@ footer { background: var(--deep); color: rgba(255,255,255,0.55); padding: 4rem; 
   <div>
     <div class="footer-logo">Creating Executive Opportunities Foundation</div>
     <p class="footer-about">We are a trauma-informed nonprofit organization dedicated to healing communities, equipping leaders, and creating opportunity for those who need it most.</p>
-    <span class="footer-ein">501(c)(3) · EIN: XX-XXXXXXX</span>
+    <span class="footer-ein">501(c)(3) · EIN: 88-1857901</span>
+    <div style="margin-top:1rem; display:flex; flex-direction:column; gap:0.4rem;">
+      <a href="tel:9044456552" style="font-size:0.83rem; color:rgba(255,255,255,0.5); text-decoration:none;">📞 904-445-6552</a>
+      <a href="mailto:support@ceotransformation.org" style="font-size:0.83rem; color:rgba(255,255,255,0.5); text-decoration:none;">✉ support@ceotransformation.org</a>
+      <a href="https://ceotransformation.org" target="_blank" rel="noopener noreferrer" style="font-size:0.83rem; color:rgba(255,255,255,0.5); text-decoration:none;">🌐 ceotransformation.org</a>
+      <a href="https://creatingexecutiveopportunities.com" target="_blank" rel="noopener noreferrer" style="font-size:0.83rem; color:rgba(255,255,255,0.5); text-decoration:none;">🌐 creatingexecutiveopportunities.com</a>
+    </div>
   </div>
   <div class="footer-col">
     <h4>Programs</h4>
@@ -475,9 +478,7 @@ footer { background: var(--deep); color: rgba(255,255,255,0.55); padding: 4rem; 
   <div class="footer-col">
     <h4>Organization</h4>
     <ul>
-      <li><a href="#mission">About us</a></li>
-      <li><a href="#mission">Our founder</a></li>
-      <li><a href="#impact">Impact</a></li>
+      <li><a href="https://creatingexecutiveopportunities.com" target="_blank" rel="noopener noreferrer">LLC & Business</a></li>
       <li><a href="mailto:support@ceotransformation.org">Contact us</a></li>
     </ul>
   </div>
@@ -499,7 +500,7 @@ footer { background: var(--deep); color: rgba(255,255,255,0.55); padding: 4rem; 
 
 <script>
   function updateTimer() {
-    const target = new Date('2026-08-01T00:00:00');
+    const target = new Date('2026-07-25T00:00:00');
     const now = new Date();
     const diff = target - now;
     if (diff <= 0) return;
